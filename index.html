@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Product|Prev</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background-color: hsl(30, 38%, 92%); }
+    #Container{ background-color: white; margin: 160px auto; display: flex; width: fit-content; border-radius: 5px; }
+
+    /* Utilities */
+    h1 { color: hsl(212, 21%, 14%); font-weight: 700; }
+    h2 { color: hsl(158, 36%, 37%); font-size: 30px; }
+    p { color: hsl(228, 12%, 48%); }
+    .Strike { font-size: 12px; text-decoration: line-through; }
+    .Parfume { border-top-left-radius: 5px; border-bottom-left-radius: 5px; width: 270px; height: 100%; }
+    .Parfume-2 { display: none; }
+
+    /* Right */
+    .Right { display: flex; flex-direction: column; gap: 20px; padding: 30px; width: 270px; }
+
+    /* Price */
+    .Price { display: flex; gap: 30px; align-items: center; }
+
+    /* Anchor */
+    .A { display: flex; background-color: hsl(158, 36%, 37%); justify-content: center; padding: 15px; border-radius: 10px; gap: 10px; }
+    a { color: white; text-decoration: none; }
+    .A:hover { cursor: pointer; background-color: hsl(158, 34%, 18%); }
+
+
+    @media screen and (max-width:500px) {
+      #Container { display: block; margin: 20px auto; width: 350px; }  
+      
+      /* Utilities */
+      .Parfume { display: none;  }
+      .Parfume-2 { display: block; border-top-left-radius: 5px; border-top-right-radius: 5px; width: 350px; height: 100%; }
+
+      /* Right */
+      .Right { width: 355px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="Container">
+    <div>
+      <img class="Parfume" src="images/image-product-desktop.jpg" alt="">
+      <img class="Parfume-2" src="images/image-product-mobile.jpg" alt="">
+    </div>
+    <div class="Right">
+      <p class="Font-1">
+        Perfume
+      </p>
+      <h1>
+        Gabrielle Essence Eau De Parfum
+      </h1>
+      <p>
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
+      </p>
+      <div class="Price">
+        <h2>
+          $149.99
+        </h2>
+        <p class="Strike">
+            $169.99
+        </p>
+        </p>
+      </div>
+      <div class="A">
+        <img src="images/icon-cart.svg" alt="">
+        <a href="#">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
